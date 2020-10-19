@@ -1,0 +1,20 @@
+services:
+  kanban-postgres:
+    image: postgres
+    container_name: kanban-postgres
+    environment:
+      - POSTGRES_DB=kanban
+      - POSTGRES_PASSWORD=test
+    ports:
+      - '5432:5432'
+    volumes:
+      - kanban-postgres-data:/data
+    networks:
+      - kanban-network
+
+volumes:
+  kanban-postgres-data:
+
+networks:
+  kanban-network:
+    driver: bridge
