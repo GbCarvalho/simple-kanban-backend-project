@@ -1,5 +1,5 @@
 # Simple Kanban - Backend
- A simple kanban backend for the kanban web project
+ A simple kanban backend for the [kanban web project](https://github.com/GbCarvalho/simple-kanban-web-project)
 
 # Instructions
  - For database intialization run:
