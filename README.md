@@ -2,6 +2,7 @@
  A simple kanban backend for the [kanban web project](https://github.com/GbCarvalho/simple-kanban-web-project)
 
 # Instructions
+For this project you must have [Yarn](https://yarnpkg.com/)
  - For database intialization run:
   ```
   docker-compose up
@@ -9,10 +10,10 @@
 
   - Then for runnign the application you should run
  ```
-  npm install
-  npm tsc --init
-  npm typeorm migration:run
-  npm start
+  yarn
+  yarn tsc --init
+  yarn typeorm migration:run
+  yarn start
  ```
 
   - You shall be fine from there.
