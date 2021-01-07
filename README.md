@@ -5,7 +5,7 @@
 For this project you must have [Yarn](https://yarnpkg.com/)
  - For database intialization run:
   ```
-  docker-compose up
+  docker-compose up -d
   ```
 
   - Then to execute the application you should run
