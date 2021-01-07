@@ -8,7 +8,7 @@ For this project you must have [Yarn](https://yarnpkg.com/)
   docker-compose up
   ```
 
-  - Then for runnign the application you should run
+  - Then to execute the application you should run
  ```
   yarn
   yarn tsc --init
