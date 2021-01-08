@@ -1,29 +1,42 @@
 # Simple Kanban - Backend
+
  A simple kanban backend for the [kanban web project](https://github.com/GbCarvalho/simple-kanban-web-project)
 
 # Instructions
-For this project you must have [Yarn](https://yarnpkg.com/)
- - For database intialization run:
-  ```
-  docker-compose up -d
+
+For this project you must have [Yarn](https://yarnpkg.com/) (Recommended) or [Node and NPM](https://nodejs.org/en/)
+
+## ATTENTION
+
+The [.env](./.env.example) file is only required if you have anything that you want to alter from this code, like DB host, port, username, password or API port.
+
+- For full code intialization you may run:
+
+  ```bash
+  docker-compose up
   ```
 
-  - Then to execute the application you should run
- ```
+## OR
+
+- If you want to execute the server locally you may do:
+
+  ```bash
+  docker-compose run kanban-postgres
   yarn
-  yarn tsc --init
   yarn typeorm migration:run
   yarn start
- ```
+  ```
 
-  - You shall be fine from there.
+- You shall be fine from there.
 
 # Methods
 
   Here are some available methods that this API attend
   ===
+
   ## GET (/tasks)
   The get route for /tasks should return the following JSON:
+
   ```json
   {
     {
