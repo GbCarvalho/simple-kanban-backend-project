@@ -6,10 +6,6 @@
 
 For this project you must have [Yarn](https://yarnpkg.com/) (Recommended) or [Node and NPM](https://nodejs.org/en/)
 
-## ATTENTION
-
-The [.env](./.env.example) file is only required if you have anything that you want to alter from this code, like DB host, port, username, password or API port.
-
 - For full code intialization you may run:
 
   ```bash
@@ -21,7 +17,7 @@ The [.env](./.env.example) file is only required if you have anything that you w
 - If you want to execute the server locally you may do:
 
   ```bash
-  docker-compose run kanban-postgres
+  docker-compose run kanban-postgres -d
   yarn
   yarn typeorm migration:run
   yarn start
