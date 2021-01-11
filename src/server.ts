@@ -17,3 +17,5 @@ app.listen(process.env.API_PORT, () => {
   // eslint-disable-next-line no-console
   console.log('☁  ✈ Server up and running ✈  ☁');
 });
+
+// TOFIX: The deatached mode from the database isn`t working

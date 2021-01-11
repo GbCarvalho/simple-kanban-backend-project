@@ -17,7 +17,8 @@ For this project you must have [Yarn](https://yarnpkg.com/) (Recommended) or [No
 - If you want to execute the server locally you may do:
 
   ```bash
-  docker-compose run kanban-postgres -d
+  docker-compose run kanban-postgres -d #not working
+  #you must have an postgres db running to do the following steps
   yarn
   yarn typeorm migration:run
   yarn start
