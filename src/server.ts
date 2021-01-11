@@ -13,4 +13,7 @@ app.use(express.json());
 app.use(routes);
 app.use(errorHandler);
 
-app.listen(3333);
+app.listen(process.env.API_PORT, () => {
+  // eslint-disable-next-line no-console
+  console.log('☁  ✈ Server up and running ✈  ☁');
+});
